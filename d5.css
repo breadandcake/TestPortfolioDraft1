@@ -1,22 +1,158 @@
+.recipeLink:hover {
+  color: blue;
+}
+
+.recipeLink {
+  text-decoration: underline;
+}
+
+/*Testing Bread Grid*/
+.breadsGallerySquare {
+  margin: 1px -16px;
+  /*border-style: dashed;
+  border-color: aqua;*/
+}
+  
+/* Add padding BETWEEN each column */
+.breadsGallerySquare,
+.breadsGallerySquare > .breadsColumn {
+  padding: 8px;
+  /*border-style: solid;*/
+}
+  
+/* Create three equal columns that floats next to each other */
+.breadsColumn {
+  float: left;
+  width: 33%;
+  /*border-style: solid;
+  border-color: palevioletred;*/
+}
+  
+/* Clear floats after rows */ 
+.breadsGallerySquare:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+  
+/* Content */
+.breadsContent {
+  background-color: white;
+  padding: 10px;
+  text-decoration: none;
+  /*border-style: dotted;
+  border-color: green;*/
+}
+
+.breadsMainSquare {
+  max-width: 100%;
+  /*border-style: solid;
+  border-color: orange;*/
+
+}
+
+/*
+.testingImage {
+  border-style: dotted;
+  border-color: purple;
+  border-width: 5px;  
+}
+*/
+
+
+.breadsRecipe {
+  /*
+  border-style: solid;
+  border-color: darkgreen;
+  border-width: 5px; 
+  */
+  margin: 0px; 
+}
+
+
+/*
+.breadsHeroImageContainer {
+  border-style: dashed;
+  border-color: purple;
+}
+*/
+
+.breadsHeader {
+  margin: 10px 0px;
+  text-align: center;
+  /*border-style: solid;
+  border-color: yellow;*/
+}
+
+/*
+.breadsHeaderDiv {  
+  border-style: dotted;
+  border-color: lightskyblue;
+  border-width: 10px;
+}
+*/
+
+
+
 /*To tell where the divs are*/
 
+/*.rstest {
+  border-style: dashed;
+  border-color: orange;
+  max-width: 100%;
+}*/
 
-.heroImageContainer {
-    position: relative;
-    text-align: center;
-    color: orange;
-    border-style: dotted;
+/*.RSourdough {*/
+  /*background-color: black;*/
+  /*padding: 10em 10em -1em 10em;*/
+  /*border-style: dashed;
+  border-color: green;
+  max-width: 100%;*/
+  /*border-style: solid;
+  border-width: 5px;
+  border-color: green;
+}*/
 
+.rSimageContainer {
+  /*border: solid;
+  border-width: 5px;
+  border-color: blueviolet;*/
+  background-color: white;
+  padding: 0.75em 0.75em 0.5em 0.75em;
+}
+
+.RSourdoughRecMainSquare {
+  max-width: 100%;
+  /*border: solid;
+  border-width: 5px;
+  border-color: lightcoral;*/
+}
+
+.breadsHeroImageContainer {
+  background-color: white;
+  padding: 0.75em 0.75em 0.5em 0.75em;
+  /*border-style: solid;
+  border-color: blue;*/
 
 }
 
 
-.heroImage {
-  border-style: dashed;
-  color: blue;
+.heroImageContainer {
+  position: relative;
+  text-align: center;
+  /*color: orange;
+  border-style: dotted;*/
 
-  background-color: powderblue;
+
+}
+
+.heroImage {
+  /*border-style: dashed;
+  color: blue;
+  background-color: powderblue;*/
   max-width: 100%;
+  background-color: white;
+  padding: 0.75em 0.75em 0.5em 0.75em;
       
 }
 
@@ -75,10 +211,18 @@ header{
 */
 
 
+
+
+.mainHeader {
+  text-align: center;
+}
+
+
+
+
 * {
   box-sizing: border-box;
 }
-
 
 
 body {
@@ -131,38 +275,110 @@ body {
   .content {
     background-color: white;
     padding: 10px;
+    text-decoration: none;
   }
 
   /*.Bread {
     text-decoration: none;
+  }
+
+  .BreadImage {
+    text-decoration: none;
   }*/
 
-  .mainNavBar {
-    background-color: #ffffff;
-    padding: 0.25em 0.25em;
-    border-style: dotted;
+  .Bread {
+    color: black;
+    text-decoration: none;
+  }
 
+
+  li {
+    padding-bottom: 0.5em;
+  }
+
+
+  /*ul li {
+    line-height: 1.6;
+  }*/
+
+  a {
+    text-decoration: none;
+    color: black;
+  }
+
+  .breadsRecNavbar a:hover {
+    color: blue;  
+  }
+
+  .breadsRecNavbar a {
+    text-decoration: none;
+    color: #000000;
+    text-decoration: none;
+  }
+
+
+  .breadsRecNavbar {
+    font-family: Arial, sans-serif;
+    font-size: 1em;
+    background-color: #f1f1f1;
+    padding: 1em 0em 0em 0em;
+    /*border-style: dotted;
+    border-color: red;*/
+  }
+
+  .mainNavBar a:hover {
+    background-color: lightcyan;
   }
 
   .mainNavBar a {
     text-decoration: none;
     color: #000000;
+    text-decoration: none;
+    padding: 0.5em;
   }
+
+
+  .mainNavBar {
+    font-family: 'Arial Narrow', sans-serif;
+    font-weight: bold;
+    font-size: 1.35em;
+    background-color: #f1f1f1;
+    /*border-style: dotted;
+    border-color: red;*/
+  }
+
+
 
 
   img {
     width: 100%;
     height: auto;
   }
+ 
+
+/*Testing Breads Responsive layout*/
+
+
+@media screen and (max-width: 900px) {
+  .breadsColumn {
+    width: 50%;
+  }
+}
+  
+@media screen and (max-width: 600px) {
+  .breadsColumn {
+      width: 50%;
+      height: 14rem;
+  }
+}
 
 
 /* Responsive layout - makes a two column-layout instead of four columns */
-@media screen and (max-width: 900px) {
-    
-    .column {
+@media screen and (max-width: 900px) {    
+  .column {
       width: 50%;
     }
-  }
+}
     
   /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
   @media screen and (max-width: 600px) {
